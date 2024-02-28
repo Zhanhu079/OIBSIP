@@ -23,19 +23,21 @@ body {
     background-color: #949f9e;
 }
 
-button {
+.btn, .enter, #del, #ans {
     border: none;
     border-radius: 1rem;
     padding: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
 }
 
 
 .screen { 
     margin-block: 3rem 1rem;
     background-color: #fff;
+    height: 7rem;
     padding: 1rem;
     border-radius: 1rem;
     flex-direction: column;
