@@ -15,7 +15,7 @@ enter.addEventListener("click", () => {
     let result = eval(expression);
     document.getElementById("result").textContent = result;
     history.push(expression + " = " + result);
-    localStorage.setItem("history", JSON.stringify(history));   
+  
 });
 
 let clear = document.getElementById("clear");
@@ -38,7 +38,9 @@ historyBtn.addEventListener("click", () => {
     let historyString = "";
     for (let i = 0; i < history.length; i++) {
         historyString += history[i];
-        historyString += ", ";
+        if (history.length > 1 && i < history.length - 1) {
+            historyString += ", ";
+        }
         ansScreen.textContent = historyString;
     }
     
