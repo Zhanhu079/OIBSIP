@@ -59,8 +59,9 @@ img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 400px;
+    height: max-content;
     padding-inline: 30rem;
+    padding-block: 10rem;
 }
 
 .about-text,
@@ -143,7 +144,7 @@ footer h5 {
 
     .about-container {
         flex-direction: column;
-        padding-inline: 10rem;
+        padding-inline: 5rem;
     }
 
     .about-text {
